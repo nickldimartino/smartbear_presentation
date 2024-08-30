@@ -14,7 +14,7 @@ const Page = () => {
         </div>
         <div className="bg-[#818cf8] w-full h-1"></div>
         <div className="text-7xl p-2 h-screen grid place-items-center">
-          What's wrong with React.js?
+          What is wrong with React.js?
         </div>
         <div className="bg-[#c084fc] w-full h-1"></div>
         <div className="text-7xl p-2 h-screen grid place-items-center">
@@ -28,7 +28,7 @@ const Page = () => {
         <div className="text-7xl p-2 h-screen grid place-items-center">SEO</div>
         <div className="bg-[#38bdf8] w-full h-1"></div>
         <div className="text-7xl p-2 h-screen grid place-items-center">
-          Developer's Experience
+          The Developer Experience
         </div>
         <div className="bg-[#818cf8] w-full h-1"></div>
         <div className="text-7xl p-2 h-screen grid place-items-center">

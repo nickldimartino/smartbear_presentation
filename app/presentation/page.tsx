@@ -1,4 +1,6 @@
 import NavBar from "@/components/NavBar";
+import Image from "next/image";
+import logo from "@/public/imgs/logo.png";
 
 const Page = () => {
   return (
@@ -6,39 +8,65 @@ const Page = () => {
       <NavBar />
       <div className="flex flex-col justify-center items-center text-white">
         <div className="text-7xl p-2 h-screen grid place-items-center">
-          Next.js
+          <Image
+            src={logo}
+            alt="product preview"
+            width={900}
+            height={900}
+            sizes="100vw"
+            quality={100}
+            className="border-2 border-white shadow-lg shadow-white"
+          />
         </div>
-        <div className="bg-[#38bdf8] w-full h-1"></div>
-        <div className="text-7xl p-2 h-screen grid place-items-center">
-          What is it?
+        <div className="h-[50rem] w-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+          {/* Radial gradient for the container to give a faded look */}
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
+          <p className="text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+            What is it?
+          </p>
         </div>
-        <div className="bg-[#818cf8] w-full h-1"></div>
-        <div className="text-7xl p-2 h-screen grid place-items-center">
-          What is wrong with React.js?
+        <div className="text-7xl p-2 h-screen grid place-items-center font-bold relative z-20 py-8">
+          {"What's wrong with React.js?"}
         </div>
-        <div className="bg-[#c084fc] w-full h-1"></div>
-        <div className="text-7xl p-2 h-screen grid place-items-center">
-          What does Next.js fix?
+        <div className="h-[50rem] w-full bg-white bg-grid-black/[0.2] relative flex items-center justify-center">
+          {/* Radial gradient for the container to give a faded look */}
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+          <p className="text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 py-8">
+            What does Next.js fix?
+          </p>
         </div>
-        <div className="bg-[#e879f9] w-full h-1"></div>
-        <div className="text-7xl p-2 h-screen grid place-items-center">
-          SSR and SSG
+
+        <div className="text-7xl p-2 h-screen grid place-items-center font-bold relative z-20 py-8">
+          <div>Server-Side Rendering (SSR)</div>
+          <div>Static-Site Generation (SSG)</div>
         </div>
-        <div className="bg-[#22d3ee] w-full h-1"></div>
-        <div className="text-7xl p-2 h-screen grid place-items-center">SEO</div>
-        <div className="bg-[#38bdf8] w-full h-1"></div>
-        <div className="text-7xl p-2 h-screen grid place-items-center">
-          The Developer Experience
+        <div className="h-[50rem] w-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+          {/* Radial gradient for the container to give a faded look */}
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
+          <p className="text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+            Search Enginge Optimization (SEO)
+          </p>
         </div>
-        <div className="bg-[#818cf8] w-full h-1"></div>
-        <div className="text-7xl p-2 h-screen grid place-items-center">
-          Next.js Out-of-the-Box
+        <div className="text-7xl p-2 h-screen grid place-items-center font-bold relative z-20 py-8">
+          {"The Developer's Experience"}
         </div>
-        <div className="bg-[#c084fc] w-full h-1"></div>
-        <div className="text-7xl p-2 h-screen grid place-items-center">
-          Thank you!
+        <div className="h-[50rem] w-full bg-white bg-grid-black/[0.2] relative flex items-center justify-center">
+          {/* Radial gradient for the container to give a faded look */}
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+          <p className="text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 py-8">
+            Next.js Out-of-the-Box
+          </p>
         </div>
-        <div className="bg-white w-full h-1"></div>
+        <div className="text-7xl p-2 h-screen grid place-items-center font-bold relative z-20 py-8">
+          Are there competitors?
+        </div>
+        <div className="h-[50rem] w-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+          {/* Radial gradient for the container to give a faded look */}
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
+          <p className="text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+            Thank you!
+          </p>
+        </div>
       </div>
     </div>
   );

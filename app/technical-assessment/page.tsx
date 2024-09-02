@@ -2,6 +2,7 @@
 import NavBar from "@/components/NavBar";
 import { FaFileDownload } from "react-icons/fa";
 import Link from "next/link";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 const Page = () => {
   const handleFileDownload = () => {
@@ -17,11 +18,11 @@ const Page = () => {
   return (
     <div>
       <NavBar />
-      <div className="min-h-screen w-full flex justify-around items-center">
+      <BackgroundBeamsWithCollision className="min-h-screen w-full flex flex-col justify-around items-center">
         <Link
           href="/pdfs/DiMartinoNicholas_TechnicalAssessment_Report.pdf"
           target="_blank"
-          className="text-6xl text-[#22d3ee]"
+          className="text-8xl text-[#22d3ee]"
           rel="noopener noreferrer"
         >
           <span className="flex flex-col items-center">
@@ -31,7 +32,7 @@ const Page = () => {
         </Link>
         <button
           onClick={handleFileDownload}
-          className="text-6xl text-[#38bdf8]"
+          className="text-8xl text-[#38bdf8]"
           rel="noopener noreferrer"
         >
           <span className="flex flex-col items-center">
@@ -39,7 +40,7 @@ const Page = () => {
             <FaFileDownload />
           </span>
         </button>
-      </div>
+      </BackgroundBeamsWithCollision>
     </div>
   );
 };

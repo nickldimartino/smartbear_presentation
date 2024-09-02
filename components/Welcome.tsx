@@ -24,6 +24,12 @@ const Welcome = () => {
           Presentation
         </Link>
         <Link
+          href="/technical-assessment"
+          className="font-bold text-base hover:underline text-white"
+        >
+          Technical Assessment
+        </Link>
+        <Link
           href="/about-me"
           className="font-bold text-base hover:underline text-white"
         >

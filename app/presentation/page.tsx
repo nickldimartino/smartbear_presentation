@@ -4,7 +4,7 @@ const Page = () => {
   return (
     <div>
       <NavBar />
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center text-white">
         <div className="text-7xl p-2 h-screen grid place-items-center">
           Next.js
         </div>

@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
-import logo from "@/public/imgs/logo.png";
+import NextJSLogo from "@/public/imgs/nextjslogo.png";
+import ReactJSLogo from "@/public/imgs/reactjslogo.png";
 
 const Page = () => {
   return (
@@ -9,7 +10,7 @@ const Page = () => {
       <div className="flex flex-col justify-center items-center text-white">
         <div className="text-7xl p-2 h-screen grid place-items-center">
           <Image
-            src={logo}
+            src={NextJSLogo}
             alt="product preview"
             width={900}
             height={900}
@@ -26,7 +27,15 @@ const Page = () => {
           </p>
         </div>
         <div className="text-7xl p-2 h-screen grid place-items-center font-bold relative z-20 py-8">
-          {"What's wrong with React.js?"}
+          <Image
+            src={ReactJSLogo}
+            alt="product preview"
+            width={900}
+            height={900}
+            sizes="100vw"
+            quality={100}
+            className="border-2 border-white shadow-lg shadow-white"
+          />
         </div>
         <div className="h-[50rem] w-full bg-white bg-grid-black/[0.2] relative flex items-center justify-center">
           {/* Radial gradient for the container to give a faded look */}

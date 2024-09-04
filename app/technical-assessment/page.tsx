@@ -22,7 +22,7 @@ const Page = () => {
         <Link
           href="/pdfs/DiMartinoNicholas_TechnicalAssessment_Report.pdf"
           target="_blank"
-          className="text-8xl text-[#22d3ee]"
+          className="text-[5vw] text-[#22d3ee]"
           rel="noopener noreferrer"
         >
           <span className="flex flex-col items-center">
@@ -32,7 +32,7 @@ const Page = () => {
         </Link>
         <button
           onClick={handleFileDownload}
-          className="text-8xl text-[#38bdf8]"
+          className="text-[5vw] text-[#38bdf8]"
           rel="noopener noreferrer"
         >
           <span className="flex flex-col items-center">

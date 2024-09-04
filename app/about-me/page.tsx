@@ -28,16 +28,17 @@ const Page = () => {
               height={300}
               sizes="100vw"
               quality={100}
+              style={{ width: '20%', height: 'auto' }}
               className="rounded-full border-2 border-white shadow-lg shadow-white"
             />
           </div>
-          <div className="text-center -mt-20 font-bold text-lg text-white">
+          <div className="text-center -mt-20 font-bold text-[1.3vw] text-white">
             <div>Nick DiMartino</div>
             <div>Greater Boston, MA</div>
             <div>nick.l.dimartino@gmail.com</div>
             <div>+1 603 793 - 3730</div>
           </div>
-          <div className="w-3/4 flex justify-around">
+          <div className="w-3/4 flex justify-around mb-10">
             <Link
               href="https://nickldimartino.github.io/portfolio/"
               target="_blank"
